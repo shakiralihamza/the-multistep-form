@@ -11,6 +11,7 @@ import Name from "./Name";
 import Email from "./Email";
 import Password from "./Password";
 
+
 function SignUpForm() {
     const {currentStep, setCurrentStep} = React.useContext(MyContext);
     const handleBack = () => {

@@ -59,6 +59,7 @@ function Password() {
                             <Grid container spacing={1.5}>
                                 <Grid item xs={10}>
                                     <Field
+                                        auttoFocus
                                         as={TextField}
                                         inputProps={{
                                             autoComplete: 'off'
