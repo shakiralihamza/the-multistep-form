@@ -28,20 +28,24 @@ function Name() {
                     {({errors, values}) => (
                         <Form>
                             <Grid container spacing={1.5}>
-                                <Grid item xs={10}>
+                                <Grid item xs>
                                     <Field
                                         as={TextField}
                                         name={'name'}
                                         autoFocus
                                         label="Full Name"
-                                        variant="outlined" fullWidth
+                                        variant="outlined"
+                                        fullWidth
                                     />
                                 </Grid>
-                                <Grid item xs={2}>
+                                <Grid item xs={'auto'}>
                                     <Button type={'submit'}
                                             disabled={values.name === '' || errors.name !== undefined}
                                             disableElevation sx={{height: '100%'}}
-                                            variant={'contained'}><EastIcon/></Button>
+                                            variant={'contained'}
+                                    >
+                                        <EastIcon/>
+                                    </Button>
                                 </Grid>
                             </Grid>
                         </Form>

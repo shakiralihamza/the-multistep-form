@@ -57,7 +57,7 @@ function Password() {
                     {({errors, values}) => (
                         <Form>
                             <Grid container spacing={1.5}>
-                                <Grid item xs={10}>
+                                <Grid item xs>
                                     <Field
                                         autoFocus
                                         as={TextField}
@@ -67,7 +67,7 @@ function Password() {
                                         variant="outlined" fullWidth
                                     />
                                 </Grid>
-                                <Grid item xs={2}>
+                                <Grid item xs={'auto'}>
                                     <Button type={'submit'}
                                             disabled={values.password === '' || errors.password !== undefined}
                                             disableElevation sx={{height: '100%'}}
